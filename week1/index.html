@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalCraft Studio | Responsive Web Design &amp; Frontend Development</title>
+  <meta name="description" content="DigitalCraft Studio is a digital service agency building fast, accessible, responsive websites with HTML, CSS, and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen reader users, jumps straight past the nav -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo" aria-label="DigitalCraft Studio, back to top">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">Digital<span class="accent">Craft</span> <span class="logo-light">Studio</span></span>
+      </a>
+
+      <!-- Hamburger toggle: only visible on small/medium screens via CSS -->
+      <button
+        type="button"
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
+          <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
+          <li><a href="#process" class="nav-link" data-nav-link>Process</a></li>
+          <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+          <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-nav" data-nav-link>Start a Project</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+          <p class="eyebrow">Web Design &amp; Development Studio</p>
+          <h1 id="hero-heading">We design and build responsive digital experiences.</h1>
+          <p class="hero-text">
+            DigitalCraft Studio turns ideas into fast, accessible websites that work
+            beautifully on every screen — from a phone in your pocket to a wide desktop
+            monitor. Clean code, clear layouts, no shortcuts.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#projects" class="btn btn-secondary">View Our Work</a>
+          </div>
+        </div>
+
+        <!-- Decorative "responsive stack" visual: pure CSS, no images, illustrates the product -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device device-desktop">
+            <div class="device-dots"><span></span><span></span><span></span></div>
+            <div class="device-body">
+              <div class="line line-lg"></div>
+              <div class="line line-sm"></div>
+              <div class="device-grid">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="device device-tablet">
+            <div class="device-dots"><span></span><span></span></div>
+            <div class="device-body">
+              <div class="line line-md"></div>
+              <div class="line line-sm"></div>
+              <div class="line line-sm"></div>
+            </div>
+          </div>
+          <div class="device device-mobile">
+            <div class="device-body">
+              <div class="line line-sm"></div>
+              <div class="line line-xs"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="section services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2 id="services-heading">Our Services</h2>
+          <p class="section-intro">Three core capabilities, one focused goal: interfaces that work everywhere.</p>
+        </div>
+
+        <div class="card-grid services-grid">
+
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Responsive Web Design</h3>
+            <p>Layouts built with Flexbox and Grid that adapt cleanly from a small phone screen up to a large desktop display, with no horizontal scrolling or broken breakpoints.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Frontend Development</h3>
+            <p>Semantic HTML, organized CSS, and vanilla JavaScript that stays readable, maintainable, and fast to load — no unnecessary frameworks.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">🧭</div>
+            <h3>UI/UX Strategy</h3>
+            <p>Clear navigation, accessible patterns, and considered layouts that help visitors find what they need without friction.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS SECTION ===================== -->
+    <section class="section process" id="process" aria-labelledby="process-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">How We Work</p>
+          <h2 id="process-heading">Our Process</h2>
+          <p class="section-intro">Five steps that take a project from idea to a tested, working interface.</p>
+        </div>
+
+        <!-- An ordered list is used because this is a genuine, fixed sequence -->
+        <ol class="process-list">
+          <li class="process-step">
+            <div class="step-marker"><span class="step-number">1</span></div>
+            <div class="step-content">
+              <h3>Discover</h3>
+              <p>Understand the goals, audience, and content before any design decisions are made.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-marker"><span class="step-number">2</span></div>
+            <div class="step-content">
+              <h3>Wireframe</h3>
+              <p>Map out structure and user flow with simple, low-fidelity layouts.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-marker"><span class="step-number">3</span></div>
+            <div class="step-content">
+              <h3>Build</h3>
+              <p>Develop semantic, responsive HTML, CSS, and JavaScript from the ground up.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-marker"><span class="step-number">4</span></div>
+            <div class="step-content">
+              <h3>Test</h3>
+              <p>Check every breakpoint, interaction, and form field for issues before launch.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-marker"><span class="step-number">5</span></div>
+            <div class="step-content">
+              <h3>Improve</h3>
+              <p>Refine based on feedback, performance, and accessibility checks.</p>
+            </div>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS / PORTFOLIO SECTION ===================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-heading">Featured Projects</h2>
+          <p class="section-intro">A few sample builds that show the range of layouts we put together.</p>
+        </div>
+
+        <!-- Filter buttons: clicking one shows only matching project cards (see script.js) -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="html">HTML</button>
+          <button type="button" class="filter-btn" data-filter="css">CSS</button>
+          <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button type="button" class="filter-btn" data-filter="responsive">Responsive</button>
+        </div>
+
+        <div class="card-grid projects-grid" id="projectsGrid">
+
+          <article class="card project-card" data-tags="html css responsive">
+            <div class="project-thumb thumb-a" aria-hidden="true"><span>CR</span></div>
+            <div class="project-body">
+              <h3>Coastline Realty</h3>
+              <p>A property-listings landing page with a clean card grid and a mobile-first enquiry form.</p>
+              <ul class="tag-list">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">Responsive</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project-card" data-tags="html css javascript">
+            <div class="project-thumb thumb-b" aria-hidden="true"><span>NC</span></div>
+            <div class="project-body">
+              <h3>Northbridge Café</h3>
+              <p>A restaurant site with an interactive menu filter and a smooth-scrolling single page layout.</p>
+              <ul class="tag-list">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project-card" data-tags="css javascript responsive">
+            <div class="project-thumb thumb-c" aria-hidden="true"><span>PF</span></div>
+            <div class="project-body">
+              <h3>Pulse Fitness UI</h3>
+              <p>A fitness-tracker interface concept with a fully responsive dashboard layout.</p>
+              <ul class="tag-list">
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">Responsive</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="filter-empty" id="filterEmpty" hidden>No projects match that filter yet.</p>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Let's Talk</p>
+          <h2 id="contact-heading">Get In Touch</h2>
+          <p class="section-intro">Tell us a little about your project and we'll get back to you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- novalidate: we handle all validation ourselves in script.js so our
+               custom error messages show instead of the browser's default ones -->
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="nameError">
+              <p class="error-message" id="nameError" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="emailError">
+              <p class="error-message" id="emailError" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" aria-describedby="messageError"></textarea>
+              <p class="error-message" id="messageError" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+            <!-- aria-live so screen readers announce success without a focus change -->
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info" aria-label="Other ways to reach us">
+            <h3>Other ways to reach us</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Email</span>
+                <span>hello@digitalcraftstudio.example</span>
+              </li>
+              <li>
+                <span class="info-label">Location</span>
+                <span>Remote — working with clients worldwide</span>
+              </li>
+              <li>
+                <span class="info-label">Response time</span>
+                <span>Within one business day</span>
+              </li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <h2 class="visually-hidden">Footer</h2>
+
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo" aria-label="DigitalCraft Studio, back to top">
+          <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="logo-text">DigitalCraft Studio</span>
+        </a>
+        <p>Designing and building responsive digital experiences, one project at a time.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h3>Follow</h3>
+        <ul class="social-list">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Dribbble</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> DigitalCraft Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
